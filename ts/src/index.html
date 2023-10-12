@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Interface de trabalho</title>
@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body >
-  <app-root class="box-border ">
+  <app-root class="box-border min-h-screen ">
 
 
     <header class="bg-orange-50  flex   ">
@@ -51,7 +51,7 @@
           </div>
 
           <div class="p-4 relative">
-            <img src="./assets/imagens/image.svg" alt="" class="rounded-full w-10 h-10 object-cover">
+            <img src="./assets/imagens/image.svg" alt="Foto de uma mulher" class="rounded-full w-10 h-10 object-cover cursor-pointer">
             <div class="w-3 h-3  bg-rose-500 rounded-full w-4 h-4 object-cover absolute  top-3 right-2">
               <p class="text-white text-[10px] font-bold font-['Roboto'] text-center ">2</p>
             </div>
@@ -62,10 +62,10 @@
 
     </header>
 
-    <div class="flex ">
-        <aside class="w-1/4 bg-white  h-screen  bg-white shadow" >
+    <div class="flex   ">
+        <aside class="w-1/4 bg-white bg-white " >
 
-          <img src="./assets/imagens/dewey 4.svg" alt="" class="w-full">
+          <img src="./assets/imagens/dewey 4.svg" alt="Logo Slaca" class="w-full">
 
           <ul class="space-y-2">
             <li class="bg-white shadow py-2 px-4 hover:bg-orange-50 cursor-pointer">
@@ -92,10 +92,228 @@
 
         </aside>
 
-        <main class="w-3/4 ">
-            <!-- Conteúdo da Seção Principal -->
+        <main class="w-3/4 flex flex-col py-4 border-l border-gray-200 ">
+
+          <div class="flex">
+            <section class="w-3/4 flex flex-col px-4">
+
+              <p class="text-orange-400 text-xl font-black font-['Roboto'] leading-[25px] tracking-wide m-2">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </p>
+
+              <img src="./assets/imagens/video.png" alt="Imagem do vídeo">
+
+            </section>
+
+            <aside class="w-1/4 flex flex-col px-4 ">
+
+              <div class="flex  justify-between  m-2 ">
+
+                <button class="w-22 h-8 px-3 py-2 bg-orange-400 rounded border border-black border-opacity-0 justify-center items-start gap-[5px] inline-flex hover:bg-orange-300">
+                  <img src="./assets/imagens/download.svg" alt="ícone de download">
+
+                  <span class="text-center text-white text-xs  tracking-wide font-['Roboto']">Download</span>
+
+                </button>
+
+                <button class="h-8 w-8 px-2 py-1 bg-orange-400 rounded border border-black border-opacity-0 justify-center items-center inline-flex hover:bg-orange-300">
+
+                  <img class="w-4 h-4" src="./assets/imagens/star.svg" alt="Estrela">
+
+                </button>
+
+                <button class="h-8 w-8 px-1 py-1 bg-orange-400 rounded border border-black border-opacity-0 justify-center items-center inline-flex hover:bg-orange-300">
+
+                  <img class="w-5 h-5" src="./assets/imagens/doi.png" alt="Ícone doi">
+
+                </button>
+              </div>
+
+              <p class="text-right text-orange-400 text-xs font-medium font-['Roboto'] tracking-wide">COMO CITAR ESSE TRABALHO?</p>
+
+              <article class="flex flex-col rounded-[3px] border border-gray-200 max-h-[365px] overflow-auto my-1">
+
+                <div class="bg-orange-50 w-50 h-9 p-1">
+                  <span class="text-neutral-600 text-xl font-medium font-['Roboto'] mx-2">Detalhes</span>
+
+                </div>
+
+                <div class="p-2">
+
+                  <p class="text-zinc-600 text-xs font-normal font-['Quicksand']tracking-tight">Tipo de Apresentação: <span class="text-zinc-600 text-xs font-bold font-['Quicksand']tracking-tight">Pôster</span></p>
+
+                  <p class="text-zinc-600 text-xs font-normal font-['Quicksand']tracking-tight">Eixo temático: <span class="text-zinc-600 text-xs font-bold font-['Quicksand']tracking-tight Alimentação e saúde (AS)">Alimentação e saúde (AS)</span></p><br/>
+
+                  <p class="text-zinc-600 text-xs font-normal font-['Quicksand']tracking-tight">Palavras-chaves: <span class="text-zinc-600 text-xs font-bold font-['Quicksand'] tracking-tight">Alimentos funcionais, alimentação escolar.</span></p><br/><br/>
+
+                  <p class="text-zinc-600 text-sm font-bold font-['Quicksand'] tracking-tight">Autores:</p>
+
+                  <ul>
+
+                    <li class="text-zinc-600 text-sm font-normal font-['Quicksand'] tracking-tight">Galileo Galilei</li>
+                    <li class="text-zinc-600 text-sm font-normal font-['Quicksand'] tracking-tight">Berta Lange de Morretes</li>
+                    <li class="text-zinc-600 text-sm font-normal font-['Quicksand'] tracking-tight">Isaac Newton</li>
+                    <li class="text-zinc-600 text-sm font-normal font-['Quicksand'] tracking-tight">Cesar Lattes</li>
+                    <li class="text-zinc-600 text-sm font-normal font-['Quicksand'] tracking-tight">Stephen Hawking</li>
+                  </ul><br><br>
+
+                  <p class="text-stone-400 text-xs font-normal font-['Quicksand'] tracking-tigh">Universidade Estadual de Campinas<br/>Universidade de São Paulo<br/>Instituto Nacional de Pesquisas Espaciais<br/>Universidade Federal do Rio de Janeiro</p>
+
+
+
+                </div>
+
+              </article>
+
+            </aside>
+
+          </div>
+          <section class=" m-4">
+
+            <article class=" rounded border border-gray-200   ">
+              <div class="rounded  bg-orange-50">
+
+                <span class="text-neutral-600 text-xl font-medium font-['Roboto'] mx-2">
+                  Resumo
+                </span>
+
+              </div>
+
+              <div class="text-zinc-600 text-sm font-normal font-['Quicksand'] leading-snug tracking-tight p-2">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
+                  <br/>
+                  <br/></p>
+
+                  <p>Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
+                    <br/>
+                    <br/></p>
+
+                    <p>Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+                      <br/>
+                      <br/></p>
+
+                      <p>Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              </div>
+            </article>
+
+          </section>
+
+          <section class=" m-4 rounded border border-gray-200">
+
+            <div class="rounded  ">
+              <div class="rounded  bg-orange-50 ">
+
+                <span class="text-neutral-600 text-xl font-medium font-['Roboto'] mx-2">
+                  Discussões
+                </span>
+
+              </div>
+            </div>
+
+
+
+             <article class="p-4">
+
+              <div class="p-2 items-center flex flex-col">
+
+                <p class="text-orange-400 text-lg font-bold font-['Roboto']">Compartilhe suas ideias ou dúvidas com os autores!</p>
+
+                <div class="flex p-4 space-x-5">
+
+                  <img src="./assets/imagens/icone1.svg" alt="">
+                  <img src="./assets/imagens/icone2.svg" alt="">
+                  <img src="./assets/imagens/icone3.svg" alt="">
+
+                </div>
+
+                <div class="m-4">
+
+                  <p class="text-zinc-600 text-sm font-normal font-['Quicksand'] leading-snug tracking-tight">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? </p>
+                 <p class="text-zinc-600 text-sm font-normal font-['Quicksand'] leading-snug tracking-tight">Deixe seus questionamentos ou sugestões para o autor!</p>
+
+                </div>
+
+
+
+                <button class="w-22 h-8 px-3 py-1 bg-gradient-to-b from-orange-300 to-orange-400 rounded border border-black border-opacity-0 justify-center items-start gap-[8px] inline-flex ">
+                  <img src="./assets/imagens/icon - criar.svg" alt="símbolo de somar" class="w-4 h-4 m-1">
+
+                  <span class="text-center text-white text-[15px] font-bold font-['Quicksand']">criar tópico</span>
+
+                </button>
+
+
+              </div>
+
+              <hr class="w-full border-1 border-gray-200">
+
+              <div class="bg-white rounded shadow border border-neutral-200 my-4 p-4">
+
+                <div class="flex flex-col">
+                  <p class="text-orange-400 text-base font-bold font-['Quicksand']">Assunto da pergunta aparece aqui</p>
+                  <p class="text-zinc-600 text-xs font-medium font-['Quicksand']">Carlos Henrique Santos</p>
+                  <p class="text-neutral-600 text-sm font-normal font-['Quicksand']">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+
+                  <div class="flex space-x-5 m-2 text-center">
+                    <img src="./assets/imagens/mais informações.svg" alt="3 pontinhos" class="cursor-pointer">
+                    <button class="h-8 w-8 px-2 py-1 bg-orange-400 rounded border border-black border-opacity-0 justify-center items-center inline-flex hover:bg-orange-300">
+
+                      <img class="w-4 h-4" src="./assets/imagens/green apples 22.svg" alt="Coração">
+
+                    </button>
+
+                    <div class="p-1 space-x-5">
+                      <span class="text-neutral-500 text-sm font-['Segoe UI'] cursor-pointer">1 like</span>
+                     <span class="text-neutral-500 text-sm font-['Segoe UI'] cursor-pointer">1 resposta</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="bg-white rounded shadow border border-neutral-200 my-4 p-4">
+
+                <div class="flex flex-col">
+                  <p class="text-orange-400 text-base font-bold font-['Quicksand']">Assunto da pergunta aparece aqui</p>
+                  <p class="text-zinc-600 text-xs font-medium font-['Quicksand']">Carlos Henrique Santos</p>
+                  <p class="text-neutral-600 text-sm font-normal font-['Quicksand']">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+
+                  <div class="flex space-x-5 m-2 text-center">
+                    <img src="./assets/imagens/mais informações.svg" alt="3 pontinhos" class="cursor-pointer">
+                    <button class="h-8 w-8 px-2 py-1 bg-orange-400 rounded border border-black border-opacity-0 justify-center items-center inline-flex hover:bg-orange-300">
+
+                      <img class="w-4 h-4" src="./assets/imagens/green apples 22.svg" alt="Coração">
+
+                    </button>
+
+                    <div class="p-1 space-x-5">
+                      <span class="text-neutral-500 text-sm font-['Segoe UI'] cursor-pointer">1 like</span>
+                     <span class="text-neutral-500 text-sm font-['Segoe UI'] cursor-pointer">1 resposta</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+
+
+
+          </section>
+          <footer>
+
+
+            <img src="./assets/imagens/imagem - footer.svg" alt="Rodapé">
+
+          </footer>
+
         </main>
+
+
     </div>
+
+
 
 
   </app-root>
