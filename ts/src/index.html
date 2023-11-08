@@ -7,6 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    function showMore() {
+      var button = document.getElementById("showMoreButton");
+      var paragraphs = document.querySelectorAll(".rest-of-resume");
+
+      for (var i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.display = "block";
+      }
+
+
+      button.style.display = "none";
+    }
+
+
+    </script>
+
+
+
+
+
 </head>
 <body >
   <app-root class="box-border min-h-screen ">
@@ -97,7 +118,7 @@
           <div class="flex">
             <section class="w-3/4 flex flex-col px-4">
 
-              <p class="text-orange-400 text-xl font-black font-['Roboto'] leading-[25px] tracking-wide m-2">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </p>
+              <h2 class="text-orange-400 text-xl font-black font-['Roboto'] leading-[25px] tracking-wide m-2"> Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
 
               <img src="./assets/imagens/video.png" alt="Imagem do vídeo">
 
@@ -166,6 +187,9 @@
             </aside>
 
           </div>
+
+
+
           <section class=" m-4">
 
             <article class=" rounded border border-gray-200   ">
@@ -179,18 +203,23 @@
 
               <div class="text-zinc-600 text-sm font-normal font-['Quicksand'] leading-snug tracking-tight p-2">
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
+
+                  <button id="showMoreButton" class=" text-orange-400 btn-show-more " onclick="showMore()">Ver Mais</button>
+
                   <br/>
                   <br/></p>
 
-                  <p>Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
+                  <p style="display: none;" class="rest-of-resume">Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
                     <br/>
                     <br/></p>
 
-                    <p>Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+                    <p style="display: none;" class="rest-of-resume">Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
                       <br/>
                       <br/></p>
 
-                      <p>Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p style="display: none;" class="rest-of-resume" >Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+
 
               </div>
             </article>
@@ -213,36 +242,97 @@
 
              <article class="p-4">
 
-              <div class="p-2 items-center flex flex-col">
-
-                <p class="text-orange-400 text-lg font-bold font-['Roboto']">Compartilhe suas ideias ou dúvidas com os autores!</p>
-
-                <div class="flex p-4 space-x-5">
-
-                  <img src="./assets/imagens/icone1.svg" alt="">
-                  <img src="./assets/imagens/icone2.svg" alt="">
-                  <img src="./assets/imagens/icone3.svg" alt="">
-
+              <div class="container mx-auto p-4">
+                <div class="topic-section  p-2 items-center flex flex-col">
+                    <p class="text-orange-400 text-lg font-bold font-['Roboto']">Compartilhe suas ideias ou dúvidas com os autores!</p>
+                    <div class="flex p-4 space-x-5">
+                        <img src="./assets/imagens/icone1.svg" alt="">
+                        <img src="./assets/imagens/icone2.svg" alt="">
+                        <img src="./assets/imagens/icone3.svg" alt="">
+                    </div>
+                    <div class="m-4">
+                        <p class="text-zinc-600 text-sm font-normal font-['Quicksand'] leading-snug tracking-tight">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade?</p>
+                        <p class="text-zinc-600 text-sm font-normal font-['Quicksand'] leading-snug tracking-tight">Deixe seus questionamentos ou sugestões para o autor!</p>
+                    </div>
+                    <button class="w-22 h-8 px-3 py-1 bg-gradient-to-b from-orange-300 to-orange-400 rounded border border-black border-opacity-0 justify-center items-start gap-[8px] inline-flex btn-create-topic">
+                        <img src="./assets/imagens/icon - criar.svg" alt="símbolo de somar" class="w-4 h-4 m-1">
+                        <span class="text-center text-white text-[15px] font-bold font-['Quicksand']">criar tópico</span>
+                    </button>
                 </div>
 
-                <div class="m-4">
+                <div class="hidden answered-topic flex flex-col">
+                    <h2 class="ops-topic-subject text-center text-zinc-600 text-sm font-normal font-['Quicksand']">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h2>
+                    <form id="topic-form" class="comments-container">
+                        <div class="mt-4">
+                            <label for="topic-subject" class="ops-topic-subject text-orange-400 text-base font-bold font-['Roboto']">Assunto</label>
+                            <input type="text" id="topic-subject" placeholder="Defina um tópico sucinto para notificar os autores…" class="w-full p-2 border border-gray-300 rounded">
+                        </div>
+                        <div class="mt-4">
+                            <label for="topic-content" class="text-orange-400 text-base font-bold font-['Roboto']">Conteúdo</label>
+                            <textarea id="topic-content" class="w-full p-2 border border-gray-300 rounded" rows="4"></textarea>
+                        </div>
+                        <div class="flex w-full items-center ">
+                          <div class=" w-3/4">
+                            <label for="topic-email" class="text-orange-400 text-base font-bold font-['Roboto']">E-mail</label>
+                            <input type="email" id="topic-email" class="w-full bg-gray-100 rounded-bl rounded-br border border-stone-300" placeholder="Seu endereço de e-mail">
+                        </div>
+                        <div class="">
+                            <button type="submit" class="w-[205.10px] h-[31px] bg-gradient-to-b from-orange-300 to-orange-400 rounded-br w-1/4 mt-6 text-white hover:bg-orange-500 ">
+                                Enviar
+                            </button>
+                        </div>
+                        </div>
+                    </form>
+                    <div class=" success-message mt-4 items-center flex flex-col" id="success-message">
+                    <p class="text-center text-orange-400 text-lg font-bold font-['Roboto']" >Seu tópico foi enviado com sucesso! :D</p>
+                    <p class="text-center text-zinc-600 text-sm font-normal font-['Quicksand'] leading-tight m-4">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                    <p class="text-neutral-500 text-base font-bold font-['Quicksand']">Aguardando feedback dos autores</p>
+                    <p class="text-center text-orange-400 text-sm font-medium font-['Quicksand'] underline leading-tight">Descubra outros trabalhos!</p>
 
-                  <p class="text-zinc-600 text-sm font-normal font-['Quicksand'] leading-snug tracking-tight">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? </p>
-                 <p class="text-zinc-600 text-sm font-normal font-['Quicksand'] leading-snug tracking-tight">Deixe seus questionamentos ou sugestões para o autor!</p>
-
+                    <button class="w-22 h-8 px-3 py-1 bg-gradient-to-b from-orange-300 to-orange-400 rounded border border-black border-opacity-0 justify-center items-start gap-[8px] inline-flex btn-create-topic my-4">
+                      <img src="./assets/imagens/icon - criar.svg" alt="símbolo de somar" class="w-4 h-4 m-1">
+                      <span class="text-center text-white text-[15px] font-bold font-['Quicksand']">criar tópico</span>
+                  </button>
+                  </div>
                 </div>
+            </div>
+            <script>
+              const createTopicButton = document.querySelector('.btn-create-topic');
+              const topicSection = document.querySelector('.topic-section');
+              const answeredTopicForm = document.querySelector('.answered-topic');
+              const successMessage = document.getElementById('success-message');
+              const topicForm = document.getElementById('topic-form');
+
+              topicForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Esconde o formulário respondido
+                answeredTopicForm.style.display = 'none';
+
+                // Exibe a mensagem de sucesso
+                successMessage.style.display = 'block';
+
+                // Oculta a seção de criação de tópico
+                topicSection.style.display = 'none';
+              });
+
+              createTopicButton.addEventListener('click', () => {
+                // Ao clicar em "criar tópico", mostra o formulário respondido e esconde a mensagem de sucesso
+                answeredTopicForm.style.display = 'flex';
+                successMessage.style.display = 'none';
+
+                // Oculta a seção de criação de tópico
+                topicSection.style.display = 'none';
+              });
+            </script>
 
 
 
-                <button class="w-22 h-8 px-3 py-1 bg-gradient-to-b from-orange-300 to-orange-400 rounded border border-black border-opacity-0 justify-center items-start gap-[8px] inline-flex ">
-                  <img src="./assets/imagens/icon - criar.svg" alt="símbolo de somar" class="w-4 h-4 m-1">
-
-                  <span class="text-center text-white text-[15px] font-bold font-['Quicksand']">criar tópico</span>
-
-                </button>
 
 
-              </div>
+
+
+
 
               <hr class="w-full border-1 border-gray-200">
 

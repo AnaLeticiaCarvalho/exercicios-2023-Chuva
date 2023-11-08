@@ -1,4 +1,5 @@
 module.exports = {
+  projectId: 'jngjgx',
   component: {
     devServer: {
       framework: "angular",
